@@ -10,6 +10,7 @@ import {
   ArrowRight, Users, PlayCircle, Zap
 } from 'lucide-react';
 import { useState, useRef } from 'react';
+import logo from '../arenaplan-logo.jpg';
 
 const WHATSAPP_NUMBER = '5511982915313';
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20da%20ArenaPlan%20Smart%20PDV.`;
@@ -27,8 +28,8 @@ export default function App() {
       {/* Navbar */}
       <nav className="fixed top-0 w-full z-50 bg-[#0A0A0B]/80 backdrop-blur-md rounded-none border-t-0 border-x-0 border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-emerald-500 rounded-xl flex items-center justify-center font-bold text-black text-xl">A</div>
+          <div className="flex items-center gap-3">
+            <img src={logo} alt="ArenaPlan Logo" className="h-12 w-12 object-contain hover:scale-110 transition-transform" />
             <span className="font-display font-bold text-xl tracking-tight">Arena<span className="text-emerald-500">Plan</span></span>
           </div>
           
