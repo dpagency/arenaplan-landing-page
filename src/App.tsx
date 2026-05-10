@@ -11,6 +11,10 @@ import {
 } from 'lucide-react';
 import { useState, useRef } from 'react';
 import logo from '../arenaplan-logo.png';
+import machine1 from '../machine1.png';
+import machine2 from '../machine2.png';
+import machine3 from '../machine3.png';
+import machine4 from '../machine4.png';
 
 const WHATSAPP_NUMBER = '5511982915313';
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20da%20ArenaPlan%20Smart%20PDV.`;
@@ -30,7 +34,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src={logo} alt="ArenaPlan Logo" className="h-12 w-12 object-contain hover:scale-110 transition-transform" />
-            <span className="font-display font-bold text-xl tracking-tight">Arena<span className="text-emerald">Plan</span></span>
+            <span className="font-display font-bold text-xl tracking-tight">ArenaPlan</span>
           </div>
           
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/60">
@@ -64,6 +68,7 @@ export default function App() {
         <HeroSection />
         <SocialProofSection />
         <FeaturesSection />
+        <MachineGallerySection />
         <SmartExperienceSection />
         <BenefitsSection />
         <DashboardSection />
@@ -140,66 +145,34 @@ function HeroSection() {
           initial={{ opacity: 0, scale: 0.9, rotateY: 10 }}
           animate={{ opacity: 1, scale: 1, rotateY: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="relative perspective-1000"
+          className="relative flex items-center justify-center"
         >
-          {/* Mockup Container */}
-          <div className="relative w-full aspect-square max-w-[600px] mx-auto">
-             <div className="absolute inset-0 bg-gradient-to-tr from-electric-blue/20 to-emerald/20 rounded-full blur-[80px]"></div>
-             
-             {/* The Device Mockup */}
-             <div className="relative w-full h-full flex items-center justify-center">
-                <div className="absolute inset-x-8 inset-y-4 bg-white/5 backdrop-blur-3xl rounded-[40px] border border-white/10 shadow-2xl rotate-3"></div>
-                <div className="w-[280px] h-[580px] bg-zinc-900 rounded-[3rem] border-[6px] border-zinc-800 shadow-2xl relative z-10 transform rotate-[-6deg] hover:rotate-0 transition-transform duration-700">
-                  {/* Screen */}
-                  <div className="w-full h-full bg-zinc-950 rounded-[2.5rem] overflow-hidden relative border border-white/5">
-                    <div className="absolute top-0 inset-x-0 h-6 bg-zinc-900 z-20 flex justify-center items-center">
-                       <div className="w-12 h-1 rounded-full bg-zinc-700"></div>
-                    </div>
-                    {/* UI on Screen */}
-                    <div className="pt-10 px-4 pb-4 h-full flex flex-col gap-4 bg-gradient-to-b from-zinc-900 to-black">
-                      <div className="flex justify-between items-center text-white">
-                        <span className="text-xs text-zinc-400">Venda #1042</span>
-                        <span className="text-xs font-bold text-emerald">Online</span>
-                      </div>
-                      <div className="text-4xl font-display font-medium text-white tracking-tight">R$ 184,50</div>
-                      
-                      <div className="mt-4 flex flex-col gap-2">
-                        <div className="h-12 rounded-xl bg-zinc-800/50 border border-zinc-700/50 flex items-center px-4">
-                          <CreditCard size={18} className="text-electric-blue mr-3" />
-                          <span className="text-sm font-medium">Aproximar Cartão</span>
-                        </div>
-                        <div className="p-4 rounded-xl glass-panel mt-2 relative overflow-hidden group">
-                           <div className="absolute inset-0 bg-gradient-to-r from-emerald/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                           <Receipt size={24} className="text-emerald mb-2" />
-                           <h4 className="font-semibold text-sm">Cupom Fiscal</h4>
-                           <p className="text-xs text-zinc-400">Pronto para emissão</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Floating Badges */}
-                <motion.div 
-                  initial={{ y: 20, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 1, duration: 0.8 }}
-                  className="absolute -right-8 top-1/4 p-6 bg-[#0D0D0E] border border-white/10 rounded-2xl shadow-2xl flex flex-col gap-1 z-20"
-                >
-                  <span className="text-[10px] text-white/40 font-bold uppercase tracking-widest">Destaque</span>
-                  <span className="font-bold text-sm">NFe Integrada</span>
-                </motion.div>
-
-                <motion.div 
-                  initial={{ y: -20, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 1.2, duration: 0.8 }}
-                  className="absolute -left-12 bottom-1/3 p-6 bg-zinc-900 border border-white/10 rounded-3xl shadow-2xl flex flex-col gap-1 z-20"
-                >
-                  <span className="text-[10px] text-white/40 font-bold uppercase tracking-widest">Taxas</span>
-                  <span className="font-bold text-sm text-emerald">5 Menores do BR</span>
-                </motion.div>
-             </div>
+          <div className="relative max-w-[520px] w-full mx-auto">
+            <div className="absolute inset-0 bg-gradient-to-tr from-electric-blue/20 to-emerald/20 rounded-full blur-[80px]"></div>
+            <img
+              src={machine1}
+              alt="ArenaPlan Smart PDV"
+              className="relative z-10 w-full object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"
+            />
+            {/* Floating Badges */}
+            <motion.div 
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1, duration: 0.8 }}
+              className="absolute -right-8 top-1/4 p-6 bg-[#0D0D0E] border border-white/10 rounded-2xl shadow-2xl flex flex-col gap-1 z-20"
+            >
+              <span className="text-[10px] text-white/40 font-bold uppercase tracking-widest">Destaque</span>
+              <span className="font-bold text-sm">NFe Integrada</span>
+            </motion.div>
+            <motion.div 
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1.2, duration: 0.8 }}
+              className="absolute -left-12 bottom-1/3 p-6 bg-zinc-900 border border-white/10 rounded-3xl shadow-2xl flex flex-col gap-1 z-20"
+            >
+              <span className="text-[10px] text-white/40 font-bold uppercase tracking-widest">Taxas</span>
+              <span className="font-bold text-sm text-emerald">5 Menores do BR</span>
+            </motion.div>
           </div>
         </motion.div>
       </div>
@@ -319,53 +292,24 @@ function SmartExperienceSection() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="relative"
+          className="relative flex items-center justify-center"
         >
-          <div className="aspect-[4/3] rounded-[2rem] overflow-hidden bg-zinc-900 border border-white/10 p-2 shadow-2xl relative">
-            <div className="absolute inset-0 bg-gradient-to-tr from-emerald/5 to-blue-500/5"></div>
-            {/* Mocked UI for "Cinematic Experience" representation */}
-            <div className="w-full h-full bg-zinc-950 rounded-3xl border border-white/5 p-6 flex flex-col relative overflow-hidden">
-               <div className="flex justify-between items-center mb-6">
-                 <div>
-                   <h3 className="font-display text-xl font-medium">Mesa 12</h3>
-                   <span className="text-xs text-zinc-500">1h 14m • João M.</span>
-                 </div>
-                 <div className="px-3 py-1 bg-emerald/20 text-emerald rounded-full text-xs font-semibold">Ocupada</div>
+          <div className="relative max-w-[480px] w-full mx-auto">
+            <div className="absolute inset-0 bg-gradient-to-tr from-emerald/10 to-electric-blue/10 rounded-full blur-[60px]"></div>
+            <img
+              src={machine2}
+              alt="ArenaPlan Smart PDV em uso"
+              className="relative z-10 w-full object-contain drop-shadow-2xl"
+            />
+            <div className="absolute -bottom-8 -left-8 bg-[#0D0D0E] border border-white/10 shadow-2xl p-5 rounded-2xl flex items-center gap-4 animate-bounce" style={{ animationDuration: '3s' }}>
+               <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
+                 <Receipt size={20} />
                </div>
-               
-               <div className="flex-1 overflow-hidden flex flex-col gap-3">
-                 {[
-                   { name: "2x Chopp Artesanal", price: "R$ 38,00" },
-                   { name: "1x Picanha na Chapa", price: "R$ 145,00" },
-                   { name: "1x Porção de Fritas", price: "R$ 32,50" }
-                 ].map((item, i) => (
-                   <div key={i} className="flex justify-between text-sm py-2 border-b border-zinc-800 last:border-0">
-                     <span className="text-zinc-300">{item.name}</span>
-                     <span>{item.price}</span>
-                   </div>
-                 ))}
-               </div>
-
-               <div className="mt-auto pt-6 border-t border-zinc-800">
-                 <div className="flex justify-between items-end mb-4">
-                   <span className="text-zinc-500 text-sm">Total</span>
-                   <span className="text-3xl font-display font-medium">R$ 215,50</span>
-                 </div>
-                 <button className="w-full py-4 rounded-xl bg-white text-black font-semibold hover:bg-zinc-200 transition-colors">
-                   Fechar Conta
-                 </button>
+               <div>
+                 <p className="text-sm font-bold">Cupom Fiscal</p>
+                 <p className="text-[10px] text-white/40 uppercase font-bold tracking-widest mt-0.5">Gerado em 1.2s</p>
                </div>
             </div>
-          </div>
-          
-          <div className="absolute -bottom-8 -left-8 bg-[#0D0D0E] border border-white/10 shadow-2xl p-5 rounded-2xl flex items-center gap-4 animate-bounce" style={{ animationDuration: '3s' }}>
-             <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
-               <Receipt size={20} />
-             </div>
-             <div>
-               <p className="text-sm font-bold">Cupom Fiscal</p>
-               <p className="text-[10px] text-white/40 uppercase font-bold tracking-widest mt-0.5">Gerado em 1.2s</p>
-             </div>
           </div>
         </motion.div>
       </div>
@@ -617,9 +561,9 @@ function CTASection() {
            viewport={{ once: true }}
            transition={{ duration: 0.8 }}
         >
-            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-electric-blue to-emerald flex items-center justify-center text-white mx-auto mb-8 shadow-[0_0_40px_rgba(0,255,0,0.25)]">
-             <Smartphone size={40} strokeWidth={1.5} />
-          </div>
+            <div className="w-48 mx-auto mb-8">
+              <img src={machine4} alt="ArenaPlan Smart PDV" className="w-full object-contain drop-shadow-[0_0_40px_rgba(0,255,0,0.25)] hover:scale-105 transition-transform duration-500" />
+            </div>
           
           <h2 className="text-4xl md:text-[64px] font-display font-bold leading-[1.05] mb-6 tracking-tight">
             Transforme sua operação com uma solução profissional completa.
@@ -651,6 +595,53 @@ function CTASection() {
     </section>
   );
 }
+function MachineGallerySection() {
+  const machines = [
+    { img: machine1, name: "Smart PDV Pro", desc: "Alta performance para alto volume de vendas." },
+    { img: machine2, name: "Smart PDV Compact", desc: "Mobilidade para atendimento direto na mesa." },
+    { img: machine3, name: "Smart PDV Plus", desc: "Impressora integrada e conectividade total." },
+    { img: machine4, name: "Smart PDV Ultra", desc: "Tela dupla para uma experiência premium." },
+  ];
+
+  return (
+    <section className="py-24 relative overflow-hidden bg-black/20">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center max-w-2xl mx-auto mb-16">
+          <h2 className="text-3xl md:text-5xl font-display font-bold tracking-tight mb-6">
+            Linha completa de <span className="text-emerald">máquinas</span>
+          </h2>
+          <p className="text-white/50 text-lg">Escolha o modelo ideal para o seu negócio.</p>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {machines.map((m, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              className="group bg-zinc-900 border border-white/10 rounded-[2rem] overflow-hidden hover:-translate-y-2 transition-transform duration-300"
+            >
+              <div className="aspect-square bg-zinc-800/30 flex items-center justify-center p-8">
+                <img
+                  src={m.img}
+                  alt={m.name}
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="font-bold text-lg mb-2">{m.name}</h3>
+                <p className="text-sm text-white/50">{m.desc}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Footer() {
   return (
     <footer className="bg-black/40 backdrop-blur-md py-12 border-t border-white/10 relative z-10">
@@ -658,7 +649,7 @@ function Footer() {
         <div className="col-span-2">
           <div className="flex items-center gap-2 mb-4">
             <img src={logo} alt="ArenaPlan Logo" className="h-10 w-10 rounded-xl object-contain" />
-            <span className="font-display font-bold text-xl tracking-tight">Arena<span className="text-emerald">Plan</span></span>
+            <span className="font-display font-bold text-xl tracking-tight">ArenaPlan</span>
           </div>
           <p className="text-white/40 max-w-sm text-sm font-medium">
             Tecnologia premium em pagamentos e gestão para o seu negócio.
