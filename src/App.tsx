@@ -10,7 +10,7 @@ import {
   ArrowRight, Users, PlayCircle, Zap
 } from 'lucide-react';
 import { useState, useRef } from 'react';
-import logo from '../arenaplan-logo.jpg';
+import logo from '../arenaplan-logo.png';
 
 const WHATSAPP_NUMBER = '5511982915313';
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20da%20ArenaPlan%20Smart%20PDV.`;
@@ -21,7 +21,7 @@ export default function App() {
   const opacity = useTransform(scrollYProgress, [0, 0.05], [1, 0]);
   
   return (
-    <div className="min-h-screen bg-[#0A0A0B] text-white overflow-hidden font-sans selection:bg-emerald-500/30">
+    <div className="min-h-screen bg-[#0A0A0B] text-white overflow-hidden font-sans selection:bg-emerald/30">
       {/* Background Mesh */}
       <div className="fixed inset-0 bg-geometric-pattern z-0 pointer-events-none opacity-20"></div>
       
@@ -30,7 +30,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src={logo} alt="ArenaPlan Logo" className="h-12 w-12 object-contain hover:scale-110 transition-transform" />
-            <span className="font-display font-bold text-xl tracking-tight">Arena<span className="text-emerald-500">Plan</span></span>
+            <span className="font-display font-bold text-xl tracking-tight">Arena<span className="text-emerald">Plan</span></span>
           </div>
           
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/60">
@@ -48,7 +48,7 @@ export default function App() {
               href={WHATSAPP_LINK} 
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-2.5 rounded-full text-sm font-semibold bg-emerald-500 text-black hover:bg-emerald-400 shadow-[0_0_20px_rgba(16,185,129,0.3)] flex items-center gap-2"
+              className="px-6 py-2.5 rounded-full text-sm font-semibold bg-emerald text-black hover:bg-emerald shadow-[0_0_20px_rgba(0,255,0,0.3)] flex items-center gap-2"
             >
               Falar no WhatsApp
             </a>
@@ -89,13 +89,13 @@ function HeroSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-2xl"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-6">
-            <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald/10 border border-emerald/20 text-emerald text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-6">
+            <span className="flex h-2 w-2 rounded-full bg-emerald animate-pulse"></span>
             Uma das 5 menores taxas do Brasil
           </div>
           
           <h1 className="text-5xl md:text-[64px] font-display font-bold leading-[1.05] tracking-tight text-white mb-6">
-            A máquina <span className="text-emerald-500">SMART</span> que faz você crescer.
+            A máquina <span className="text-emerald">SMART</span> que faz você crescer.
           </h1>
           
           <p className="text-lg text-white/50 leading-relaxed max-w-md mb-8">
@@ -197,7 +197,7 @@ function HeroSection() {
                   className="absolute -left-12 bottom-1/3 p-6 bg-zinc-900 border border-white/10 rounded-3xl shadow-2xl flex flex-col gap-1 z-20"
                 >
                   <span className="text-[10px] text-white/40 font-bold uppercase tracking-widest">Taxas</span>
-                  <span className="font-bold text-sm text-emerald-500">5 Menores do BR</span>
+                  <span className="font-bold text-sm text-emerald">5 Menores do BR</span>
                 </motion.div>
              </div>
           </div>
@@ -259,7 +259,7 @@ function FeaturesSection() {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="bg-zinc-900 border border-white/10 shadow-2xl p-8 rounded-[2rem] hover:-translate-y-2 transition-transform duration-300 group"
             >
-              <div className="w-14 h-14 rounded-2xl bg-[#0D0D0E] border border-white/5 flex items-center justify-center mb-6 text-white/60 group-hover:text-emerald-500 group-hover:bg-emerald-500/10 transition-all">
+              <div className="w-14 h-14 rounded-2xl bg-[#0D0D0E] border border-white/5 flex items-center justify-center mb-6 text-white/60 group-hover:text-emerald group-hover:bg-emerald/10 transition-all">
                 {feature.icon}
               </div>
               <h3 className="font-bold text-lg mb-3 tracking-wide">{feature.title}</h3>
@@ -284,7 +284,7 @@ function SmartExperienceSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="text-emerald-500 text-[10px] font-bold tracking-widest uppercase mb-4">Experiência Fluida</div>
+          <div className="text-emerald text-[10px] font-bold tracking-widest uppercase mb-4">Experiência Fluida</div>
           <h2 className="text-4xl md:text-5xl font-display font-bold leading-[1.1] mb-6">
             O fluxo perfeito para o seu restaurante ou loja.
           </h2>
@@ -322,7 +322,7 @@ function SmartExperienceSection() {
           className="relative"
         >
           <div className="aspect-[4/3] rounded-[2rem] overflow-hidden bg-zinc-900 border border-white/10 p-2 shadow-2xl relative">
-            <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500/5 to-blue-500/5"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-emerald/5 to-blue-500/5"></div>
             {/* Mocked UI for "Cinematic Experience" representation */}
             <div className="w-full h-full bg-zinc-950 rounded-3xl border border-white/5 p-6 flex flex-col relative overflow-hidden">
                <div className="flex justify-between items-center mb-6">
@@ -407,7 +407,7 @@ function BenefitsSection() {
             </ul>
           </div>
 
-          <div className="p-8 rounded-[2rem] border border-emerald/20 bg-gradient-to-b from-emerald/10 to-black relative overflow-hidden ring-1 ring-emerald/20 shadow-[0_0_40px_rgba(16,185,129,0.1)]">
+          <div className="p-8 rounded-[2rem] border border-emerald/20 bg-gradient-to-b from-emerald/10 to-black relative overflow-hidden ring-1 ring-emerald/20 shadow-[0_0_40px_rgba(0,255,0,0.1)]">
             <div className="absolute top-0 right-0 p-4 text-emerald/10 font-bold text-7xl font-display">✓</div>
             <h3 className="text-xl font-medium text-emerald pb-6 mb-6 flex items-center gap-2 border-b border-emerald/10">
               <Check size={20}/> ArenaPlan Smart PDV
@@ -424,12 +424,12 @@ function BenefitsSection() {
               ))}
             </div>
             
-            <div className="mt-8 pt-6 border-t border-emerald-500/10">
+            <div className="mt-8 pt-6 border-t border-emerald/10">
                <a 
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex justify-center items-center gap-2 py-3 bg-emerald-500 hover:bg-emerald-400 font-bold text-black rounded-xl transition-colors shadow-[0_0_20px_rgba(16,185,129,0.3)]"
+                className="w-full flex justify-center items-center gap-2 py-3 bg-emerald hover:bg-emerald font-bold text-black rounded-xl transition-colors shadow-[0_0_20px_rgba(0,255,0,0.3)]"
                >
                  Quero esta solução <ArrowRight size={18} />
                </a>
@@ -469,7 +469,9 @@ function DashboardSection() {
                {/* Dashboard Header */}
                <div className="h-14 border-b border-zinc-800 flex items-center justify-between px-6 bg-zinc-950/50">
                  <div className="flex items-center gap-2">
-                   <div className="w-6 h-6 rounded bg-gradient-to-br from-electric-blue to-emerald flex items-center justify-center font-bold text-xs">A</div>
+                   <div className="w-6 h-6 rounded overflow-hidden bg-gradient-to-br from-electric-blue to-emerald flex items-center justify-center font-bold text-xs">
+                     <img src={logo} alt="ArenaPlan" className="h-full w-full object-cover" />
+                   </div>
                    <span className="font-medium text-sm">Dashboard</span>
                  </div>
                  <div className="flex items-center gap-4">
@@ -615,7 +617,7 @@ function CTASection() {
            viewport={{ once: true }}
            transition={{ duration: 0.8 }}
         >
-          <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-electric-blue to-emerald flex items-center justify-center text-white mx-auto mb-8 shadow-[0_0_40px_rgba(59,130,246,0.3)]">
+            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-electric-blue to-emerald flex items-center justify-center text-white mx-auto mb-8 shadow-[0_0_40px_rgba(0,255,0,0.25)]">
              <Smartphone size={40} strokeWidth={1.5} />
           </div>
           
@@ -639,7 +641,7 @@ function CTASection() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 rounded-2xl bg-emerald-500 text-black font-bold hover:bg-emerald-400 hover:scale-105 transition-all flex items-center justify-center gap-2 text-lg shadow-[0_0_20px_rgba(16,185,129,0.3)]"
+              className="px-8 py-4 rounded-2xl bg-emerald text-black font-bold hover:bg-emerald hover:scale-105 transition-all flex items-center justify-center gap-2 text-lg shadow-[0_0_20px_rgba(0,255,0,0.3)]"
             >
               Falar no WhatsApp Agora
             </a>
@@ -655,8 +657,8 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
         <div className="col-span-2">
           <div className="flex items-center gap-2 mb-4">
-            <div className="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center font-bold text-black text-xl">A</div>
-            <span className="font-display font-bold text-xl tracking-tight">Arena<span className="text-emerald-500">Plan</span></span>
+            <img src={logo} alt="ArenaPlan Logo" className="h-10 w-10 rounded-xl object-contain" />
+            <span className="font-display font-bold text-xl tracking-tight">Arena<span className="text-emerald">Plan</span></span>
           </div>
           <p className="text-white/40 max-w-sm text-sm font-medium">
             Tecnologia premium em pagamentos e gestão para o seu negócio.
