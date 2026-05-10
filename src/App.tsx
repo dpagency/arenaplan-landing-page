@@ -523,14 +523,14 @@ function VideoSection() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-video rounded-3xl overflow-hidden bg-zinc-900 border border-white/10 relative group cursor-pointer flex items-center justify-center">
-              {/* Fake video thumbnail, in real life we could use an image or iframe */}
-              <div className="absolute inset-0 bg-zinc-900 object-cover opacity-80 group-hover:opacity-60 transition-opacity flex items-center justify-center">
-                <div className="w-full h-full bg-gradient-to-tr from-black to-zinc-800"></div>
-              </div>
-              <div className="w-20 h-20 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center relative z-10 group-hover:scale-110 transition-transform">
-                <PlayCircle size={40} className="text-white ml-2" />
-              </div>
+            <div className="aspect-video rounded-3xl overflow-hidden bg-zinc-900 border border-white/10 relative">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/AL5W0ZVU7vI?rel=0&modestbranding=1"
+                title="ArenaPlan Smart PDV em ação"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
             </div>
             
             <div className="absolute -bottom-6 -right-6 w-48 p-4 bg-[#0D0D0E] border border-white/10 shadow-2xl rounded-2xl flex items-center gap-3">
