@@ -301,7 +301,7 @@ function SmartExperienceSection() {
               alt="ArenaPlan Smart PDV em uso"
               className="relative z-10 w-full object-contain drop-shadow-2xl"
             />
-            <div className="absolute -bottom-8 -left-8 bg-[#0D0D0E] border border-white/10 shadow-2xl p-5 rounded-2xl flex items-center gap-4 animate-bounce" style={{ animationDuration: '3s' }}>
+            <div className="absolute -bottom-8 -left-8 z-30 bg-[#0D0D0E] border border-white/10 shadow-2xl p-5 rounded-2xl flex items-center gap-4 animate-bounce" style={{ animationDuration: '3s' }}>
                <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
                  <Receipt size={20} />
                </div>
