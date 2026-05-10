@@ -38,13 +38,7 @@ cd arenaplan-landing-page
 npm install
 ```
 
-3. Configure as variáveis de ambiente:
-```bash
-cp .env.example .env.local
-# Edite .env.local com suas configurações
-```
-
-4. Inicie o servidor de desenvolvimento:
+3. Inicie o servidor de desenvolvimento:
 ```bash
 npm run dev
 ```
@@ -60,10 +54,7 @@ npm run preview
 
 ## 🔧 Variáveis de Ambiente
 
-| Variável | Descrição | Obrigatória |
-|----------|-----------|-------------|
-| `GEMINI_API_KEY` | Chave de API do Google Gemini | ✅ |
-| `APP_URL` | URL da aplicação em produção | ❌ |
+Esta é uma **landing page estática** e não requer variáveis de ambiente.
 
 ## 🛠️ Tecnologias
 
