@@ -17,7 +17,7 @@ import machine3 from '../machine3.png';
 import machine4 from '../machine4.png';
 
 const WHATSAPP_NUMBER = '5511982915313';
-const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20da%20ArenaPlan%20Smart%20PDV.`;
+const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20da%20Arenaplan%20Smart%20PDV.`;
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,8 +33,8 @@ export default function App() {
       <nav className="fixed top-0 w-full z-50 bg-[#0A0A0B]/80 backdrop-blur-md rounded-none border-t-0 border-x-0 border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="ArenaPlan Logo" className="h-12 w-12 object-contain hover:scale-110 transition-transform" />
-            <span className="font-display font-bold text-xl tracking-tight">ArenaPlan</span>
+            <img src={logo} alt="Arenaplan Logo" className="h-12 w-12 object-contain hover:scale-110 transition-transform" />
+            <span className="font-display font-bold text-xl tracking-tight">Arenaplan</span>
           </div>
           
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/60">
@@ -45,7 +45,7 @@ export default function App() {
           </div>
           
           <div className="hidden md:flex items-center gap-4">
-            <a href="https://arenaplan.com.br" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 rounded-full text-sm font-semibold border border-white/20 hover:bg-white/5 transition-all text-white">
+            <a href="https://Arenaplan.com.br" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 rounded-full text-sm font-semibold border border-white/20 hover:bg-white/5 transition-all text-white">
               Website Oficial
             </a>
             <a 
@@ -151,7 +151,7 @@ function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-tr from-electric-blue/20 to-emerald/20 rounded-full blur-[80px]"></div>
             <img
               src={machine1}
-              alt="ArenaPlan Smart PDV"
+              alt="Arenaplan Smart PDV"
               className="relative z-10 w-full object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"
             />
             {/* Floating Badges */}
@@ -218,7 +218,7 @@ function FeaturesSection() {
             Poder de um ERP,<br/><span className="text-white/40">simplicidade de uma maquininha.</span>
           </h2>
           <p className="text-white/50 text-lg">
-            Tudo que o seu negócio precisa para operar rápido e com segurança está no ArenaPlan Smart PDV.
+            Tudo que o seu negócio precisa para operar rápido e com segurança está no Arenaplan Smart PDV.
           </p>
         </div>
 
@@ -298,7 +298,7 @@ function SmartExperienceSection() {
             <div className="absolute inset-0 bg-gradient-to-tr from-emerald/10 to-electric-blue/10 rounded-full blur-[60px]"></div>
             <img
               src={machine2}
-              alt="ArenaPlan Smart PDV em uso"
+              alt="Arenaplan Smart PDV em uso"
               className="relative z-10 w-full object-contain drop-shadow-2xl"
             />
             <div className="absolute -bottom-8 -left-8 z-30 bg-[#0D0D0E] border border-white/10 shadow-2xl p-5 rounded-2xl flex items-center gap-4 animate-bounce" style={{ animationDuration: '3s' }}>
@@ -328,7 +328,7 @@ function BenefitsSection() {
     <section id="benefits" className="py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-display font-bold tracking-tight mb-6">Por que escolher a ArenaPlan?</h2>
+          <h2 className="text-3xl md:text-5xl font-display font-bold tracking-tight mb-6">Por que escolher a Arenaplan?</h2>
           <p className="text-white/50 text-lg">Substitua soluções antigas e custosas por um dispositivo premium all-in-one.</p>
         </div>
 
@@ -354,7 +354,7 @@ function BenefitsSection() {
           <div className="p-8 rounded-[2rem] border border-emerald/20 bg-gradient-to-b from-emerald/10 to-black relative overflow-hidden ring-1 ring-emerald/20 shadow-[0_0_40px_rgba(0,255,0,0.1)]">
             <div className="absolute top-0 right-0 p-4 text-emerald/10 font-bold text-7xl font-display">✓</div>
             <h3 className="text-xl font-medium text-emerald pb-6 mb-6 flex items-center gap-2 border-b border-emerald/10">
-              <Check size={20}/> ArenaPlan Smart PDV
+              <Check size={20}/> Arenaplan Smart PDV
             </h3>
             <div className="grid sm:grid-cols-2 gap-6">
               {benefits.map((benefit, idx) => (
@@ -414,7 +414,7 @@ function DashboardSection() {
                <div className="h-14 border-b border-zinc-800 flex items-center justify-between px-6 bg-zinc-950/50">
                  <div className="flex items-center gap-2">
                    <div className="w-6 h-6 rounded overflow-hidden bg-gradient-to-br from-electric-blue to-emerald flex items-center justify-center font-bold text-xs">
-                     <img src={logo} alt="ArenaPlan" className="h-full w-full object-cover" />
+                     <img src={logo} alt="Arenaplan" className="h-full w-full object-cover" />
                    </div>
                    <span className="font-medium text-sm">Dashboard</span>
                  </div>
@@ -500,7 +500,7 @@ function VideoSection() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-3xl md:text-5xl font-display font-bold tracking-tight mb-6">
-              Veja a ArenaPlan Smart PDV em ação
+              Veja a Arenaplan Smart PDV em ação
             </h2>
             <p className="text-white/50 text-lg mb-8">
               Confira os vídeos no nosso canal oficial e entenda por que milhares de empreendedores já mudaram para a melhor solução do mercado.
@@ -527,7 +527,7 @@ function VideoSection() {
               <iframe
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/AL5W0ZVU7vI?rel=0&modestbranding=1"
-                title="ArenaPlan Smart PDV em ação"
+                title="Arenaplan Smart PDV em ação"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               />
@@ -562,7 +562,7 @@ function CTASection() {
            transition={{ duration: 0.8 }}
         >
             <div className="w-48 mx-auto mb-8">
-              <img src={machine4} alt="ArenaPlan Smart PDV" className="w-full object-contain drop-shadow-[0_0_40px_rgba(0,255,0,0.25)] hover:scale-105 transition-transform duration-500" />
+              <img src={machine4} alt="Arenaplan Smart PDV" className="w-full object-contain drop-shadow-[0_0_40px_rgba(0,255,0,0.25)] hover:scale-105 transition-transform duration-500" />
             </div>
           
           <h2 className="text-4xl md:text-[64px] font-display font-bold leading-[1.05] mb-6 tracking-tight">
@@ -648,8 +648,8 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
         <div className="col-span-2">
           <div className="flex items-center gap-2 mb-4">
-            <img src={logo} alt="ArenaPlan Logo" className="h-10 w-10 rounded-xl object-contain" />
-            <span className="font-display font-bold text-xl tracking-tight">ArenaPlan</span>
+            <img src={logo} alt="Arenaplan Logo" className="h-10 w-10 rounded-xl object-contain" />
+            <span className="font-display font-bold text-xl tracking-tight">Arenaplan</span>
           </div>
           <p className="text-white/40 max-w-sm text-sm font-medium">
             Tecnologia premium em pagamentos e gestão para o seu negócio.
@@ -658,7 +658,7 @@ function Footer() {
         <div>
           <h4 className="font-bold mb-4">Links</h4>
           <ul className="space-y-2 text-sm text-white/50 font-medium">
-            <li><a href="https://arenaplan.com.br" className="hover:text-white">Site Oficial</a></li>
+            <li><a href="https://Arenaplan.com.br" className="hover:text-white">Site Oficial</a></li>
             <li><a href={WHATSAPP_LINK} className="hover:text-white">Contato</a></li>
           </ul>
         </div>

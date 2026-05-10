@@ -1,4 +1,4 @@
-# Contributing to ArenaPlan Landing Page
+# Contributing to Arenaplan Landing Page
 
 ## How to Contribute
 
